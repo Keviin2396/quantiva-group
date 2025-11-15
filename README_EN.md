@@ -34,7 +34,7 @@ Quantiva Group delivers business intelligence services that turn data into decis
   - **Choropleth map:** geographic distribution by region/country.
 
 > Screenshots:
-> - docs/screenshots/dashboard-hero.png
+> - docs/screenshots/dashboard-main-page.png
 > - docs/screenshots/sql-data-model.png
 > - docs/screenshots/atlas-feedback.png (once NoSQL is integrated)
 
