@@ -1,3 +1,5 @@
+**Languages:** English | [Español](README_ES.md)
+
 # Quantiva Group — Hybrid BI services platform
 
 A professional BI project that combines a relational model in SQL Server with an optimized Power BI dashboard, designed for clarity and performance. The architecture is built to scale with a NoSQL layer in MongoDB Atlas, adding flexible feedback/log data with SQL snapshots to keep reporting stable.
