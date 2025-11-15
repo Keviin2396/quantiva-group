@@ -42,6 +42,11 @@ Quantiva Group ofrece servicios de inteligencia de negocios que convierten datos
 
 ---
 
+### Demo interactivo
+![Demo del dashboard](docs/screenshots/dashboard-demo.gif)
+
+---
+
 ## Cómo ejecutar (paso a paso reproducible)
 
 1. **Preparar SQL Server**
