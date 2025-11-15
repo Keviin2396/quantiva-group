@@ -85,6 +85,11 @@ Quantiva Group ofrece servicios de inteligencia de negocios que convierten datos
 
 ---
 
+## Licencia
+Este proyecto está bajo la licencia MIT. Consulta [LICENSE.md](LICENSE.md) para más detalles.
+
+---
+
 ## Autor y contacto
 
 - **Autor:** Kevin Ochoa — Itagüí, Colombia  
