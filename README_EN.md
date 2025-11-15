@@ -40,6 +40,12 @@ Quantiva Group delivers business intelligence services that turn data into decis
 
 ---
 
+### Interactive Demo
+![Dashboard Demo](docs/screenshots/dashboard-demo.gif)
+
+
+---
+
 ## How to run (reproducible steps)
 
 1. **Prepare SQL Server**
