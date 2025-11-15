@@ -36,7 +36,7 @@ Quantiva Group ofrece servicios de inteligencia de negocios que convierten datos
   - **Mapa coroplético:** distribución geográfica por región/país.
 
 > Capturas:
-> - docs/screenshots/dashboard-hero.png
+> - docs/screenshots/dashboard-main-page.png
 > - docs/screenshots/modelo-datos-sql.png
 > - docs/screenshots/atlas-feedback.png (cuando se integre NoSQL)
 
