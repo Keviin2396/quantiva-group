@@ -1,1 +1,21 @@
--- Medida Producto Actual
+-- Medida: Producto Actual / Measure: Current Product
+Producto Actual = 
+VAR productoSeleccionado = VALUES(productos[nombre])
+VAR productoTop = 
+    CALCULATETABLE (
+        TOPN (
+            1,
+            ADDCOLUMNS (
+                productos,
+                "TotalVentas", CALCULATE(SUM(ventas[total]))
+            ),
+            [TotalVentas], DESC
+        ),
+        ALLSELECTED(productos)
+    )
+RETURN
+IF (
+    ISFILTERED(productos[nombre]) && COUNTROWS(productoSeleccionado) = 1,
+    MAX(productos[nombre]),
+    MAXX(productoTop, productos[nombre])
+)

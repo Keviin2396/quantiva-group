@@ -1,1 +1,14 @@
--- Medida Año Actual
+-- Medida: Año Actual / Measure: Current Year
+Año Actual = 
+VAR minYear = MINX( ALLSELECTED( ventas ), YEAR( ventas[fecha] ) )
+VAR maxYear = MAXX( ALLSELECTED( ventas ), YEAR( ventas[fecha] ) )
+RETURN
+IF(
+    ISBLANK(minYear) || ISBLANK(maxYear),
+    BLANK(),
+    IF(
+        minYear = maxYear,
+        FORMAT(minYear, "####"),
+        FORMAT(minYear, "####") & " - " & FORMAT(maxYear, "####")
+    )
+)

@@ -1,1 +1,29 @@
--- Medida País Actual
+-- Medida: País Actual / Measure: Current Country
+País Actual = 
+VAR ciudadesSeleccionadas = VALUES(regiones[ciudad])
+VAR paisesSeleccionados = VALUES(regiones[pais])
+VAR totalCiudades = CALCULATE(DISTINCTCOUNT(regiones[ciudad]), ALL(regiones))
+VAR totalPaises = CALCULATE(DISTINCTCOUNT(regiones[pais]), ALL(regiones))
+
+VAR ciudadUnica = 
+    IF(
+        ISFILTERED(regiones[ciudad]) && COUNTROWS(ciudadesSeleccionadas) = 1,
+        MAX(regiones[ciudad])
+    )
+
+VAR paisDesdeCiudad = 
+    CALCULATE(
+        MAX(regiones[pais]),
+        FILTER(regiones, regiones[ciudad] = ciudadUnica)
+    )
+
+RETURN
+IF(
+    NOT ISBLANK(paisDesdeCiudad),
+    paisDesdeCiudad,
+    IF(
+        ISFILTERED(regiones[pais]) && COUNTROWS(paisesSeleccionados) = 1,
+        MAX(regiones[pais]),
+        "Global"
+    )
+)

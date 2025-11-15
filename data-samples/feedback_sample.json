@@ -1,1 +1,5 @@
-[ { cliente_id: 1, producto_id: 10, fecha: 2025-11-15, rating: 5, comentario: Servicio excelente } ]
+[
+  { "cliente_id": 1, "producto_id": 1, "fecha": "2025-01-15", "rating": 5, "comentario": "Excelente servicio / Excellent service" },
+  { "cliente_id": 2, "producto_id": 2, "fecha": "2025-02-10", "rating": 4, "comentario": "Muy útil, aunque costoso / Very useful, but expensive" },
+  { "cliente_id": 3, "producto_id": 3, "fecha": "2025-03-05", "rating": 3, "comentario": "Cumple lo básico / Meets the basics" }
+]

@@ -1,1 +1,5 @@
+# Datos de ventas de ejemplo / Example sales data
 fecha,cliente_id,producto_id,segmento_id,region_id,unidades,valor
+2025-01-15,1,1,1,1,10,12000
+2025-02-10,2,2,2,2,5,4000
+2025-03-05,3,3,3,3,2,1000
