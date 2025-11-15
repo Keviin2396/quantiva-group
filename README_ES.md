@@ -1,3 +1,5 @@
+**Idiomas:** Español | [English](README_EN.md)
+
 # Quantiva Group — Plataforma de servicios BI híbrida
 
 **Idiomas:** Español | [English](README_EN.md)
